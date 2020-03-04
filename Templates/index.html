@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Black Mamba </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Launch Page</title>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- BOOTSTRAP THEME -->
+  <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+
+  <!-- CUSTOM STYLES -->
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'index.css') }}">
+
 </head>
 <body>
-    <h1> Home Page </h1>    
+
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://video.twimg.com/amplify_video/1076891960252776449/vid/480x480/df8RnXx9bKFrvzyA.mp4?tag=9" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">Kobe Bryant</h1>
+        <p class="lead mb-0">Greatest Basketball Player On Earth. Ever.</p>
+         <a href="/gallery">Learn More </a>
+        </div>
+      </div>
+    </div>
+
+
 </body>
 </html>
